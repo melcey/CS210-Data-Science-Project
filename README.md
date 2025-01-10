@@ -1,3 +1,51 @@
 # CS210-Data-Science-Project
 
-This project aims to analyze the relationship between my screen time and calendar events, focusing on how exams and holidays influence both total screen time and its content, such as app categories. By combining personal screen time data exported from my smartphone and laptop, which provides daily usage duration and app-specific breakdowns (e.g., social media, productivity), with calendar data that categorizes events as "Exam," "Holiday," or other, I plan to uncover patterns and insights that could help manage time more effectively during different life events. The analysis will involve data preparation steps such as exporting and preprocessing data to align calendar events with screen time entries and categorizing apps into broader groups like social, educational, and entertainment. Through exploratory data analysis (EDA), I will analyze trends in total screen time and category-wise usage during exams, holidays, and regular days while also comparing patterns across different day types, such as weekdays versus weekends. The findings will be visualized through time-series charts to depict screen time trends, bar or pie charts to show app category distributions, and heatmaps to highlight variations by day type. The project aims to determine how screen time shifts during exams and holidays and identify app categories with significant changes in usage during these periods. While addressing potential limitations such as incomplete event logs or untracked app usage, I also aim to explore additional life events like vacations or social gatherings in future studies. Overall, this project will provide insights into personal time management and identify potential areas to optimize screen usage for productivity or relaxation.
+# Screen Time Analysis Project Report
+
+## Motivation
+I undertook this project to better understand my digital behavior patterns, particularly how my screen time habits change during different academic periods. As a student, I wanted to analyze whether my device usage effectively adapts to academic demands and how it shifts during breaks.
+
+## Data Source
+The data was collected from two primary sources:
+- Screen time data: Obtained through my phone and laptop's built-in screen time tracking feature, which records weekly usage patterns across different applications
+- Exam schedule data: Compiled from my academic calendar, containing exam dates and details across various courses
+
+## Data Analysis
+The analysis was conducted using Python, focusing on three main approaches:
+1. Categorization of applications into four main groups:
+   - School Work (Google Chrome, VS Code, PowerPoint)
+   - Social Media (X, Instagram, Snapchat, WhatsApp)
+   - Music (Spotify)
+   - Games (Brawl Stars)
+2. Comparison of usage patterns during:
+   - Exam weeks vs. regular school term
+   - Summer break vs. school term
+3. Calculation of percentage changes to quantify behavioral shifts
+
+## Findings
+The analysis revealed several interesting patterns about my digital behavior:
+
+### During Exam Weeks:
+- School work-related app usage increased significantly (+39.1%), showing strong academic focus
+- Notable decrease in social media (-16.7%) and gaming (-17.6%)
+- Slight increase in music consumption (+5.6%), suggesting music might help with studying
+
+### During Summer Break:
+- School work-related activities decreased as expected (-16.2%)
+- Social media usage increased considerably (+16.2%)
+- Surprisingly minimal change in gaming (+1.6%)
+- Slight decrease in music consumption (-2.5%)
+
+These patterns suggest that I effectively adjust my digital habits to academic demands, reducing recreational activities during exam periods and allowing for more leisure during breaks.
+
+## Limitations and Future Work
+### Limitations:
+- The analysis doesn't account for the quality of time spent (productive vs. unproductive usage)
+- Some applications might serve multiple purposes (e.g., Google Chrome for both study and entertainment)
+- Screen time data doesn't capture offline activities
+
+### Future Plans:
+1. Include more detailed app categorization (e.g., separating educational vs. entertainment usage within browsers)
+2. Add productivity metrics to better understand the effectiveness of study time
+3. Incorporate sleep schedule data to analyze work-rest patterns
+4. Develop a real-time monitoring system to provide insights during ongoing academic terms
